@@ -1,0 +1,469 @@
+.main-container{
+
+}
+.header{
+    flex-direction: column;
+    border-bottom: 1px solid var(--grey500);
+    padding: 20px;
+}
+.div-logo{
+    display: flex;
+    align-items: center;
+    margin: 1px 1px 1px 1px;
+    gap: 10px;
+}
+.circle-logo{
+    width: 20px;
+    height: 20px;
+    background-color: #a180ff;
+    border-radius: 100%;
+}
+.title-logo{
+    font-size: var(--title-3);
+}
+.sandwich-button{
+    background-color: transparent;
+    border: none;
+    color: var(--grey100);
+    font-size: 50px;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    display: flex;
+}
+.sandwich-button:focus ~ .div-login-and-register{
+    display: flex;
+  }
+.sandwich-button:focus ~ .header{
+    flex-direction: column;
+    height: 200px;
+}
+.div-login-and-register{
+    display: none;  
+}
+.logout-button-menu{
+    width: 141px;
+    height: 48px;
+    margin: 1px 1px 1px 1px;
+    background-color: var(--grey900);
+    color: var(--brand100);
+    border: 3px solid var(--brand100);
+    font-weight: 600;
+}
+.section-select{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 80px;
+}
+.title-select{
+    font-size: var(--title-1);
+}
+.selector{
+    padding: 0 20px;
+    border-radius: 20px;
+    border: 2px solid var(--grey100);
+    font-size: var(--title-3);
+    background-color: var(--grey900
+    );
+}
+.button-create{
+    width: 149px;
+    height: 47px;
+    font-size: var(--text-2);
+    background-color: var(--brand100);
+    color: var(--grey900);
+    padding-right: 20px;
+    border: none;
+}
+.button-create > span{
+    font-size: var(--title-2);
+    margin-right: 10px;
+}
+.ul-departments{
+    margin-top: 10px;
+    background-color: var(--grey500);
+    margin: 0 20px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    height: 400px;
+    overflow-y: scroll;
+}
+.li-departments{
+    background-color: var(--grey900);
+    width: 48%;
+    height: 70%;
+    padding: 20px;
+}
+.department-name{
+    font-size: var(--title-3);
+    margin-bottom: 10px;
+}
+.department-description{
+    font-size: var(--text-3);
+    margin-bottom: 5px;
+}
+.company-name{
+    font-size: var(--text-3);
+    margin-bottom: 30px;
+}
+.bottons-department{
+    display: flex;
+    justify-content: center;
+}
+.no-bg{
+    background-color: var(--grey900);
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.div-title-users{
+    display: flex;
+    justify-content: center; 
+    align-items: flex-end;
+    height: 100px;
+}
+.title-users{
+    margin-bottom: 10px;
+    font-size: var(--text-1);
+}
+.ul-users{
+    margin-top: 10px;
+    background-color: var(--grey500);
+    margin: 0 20px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    height: 400px;
+    overflow-y: scroll;
+    margin-bottom: 40px;
+}
+.li-users{
+    background-color: var(--grey900);
+    width: 48%;
+    padding: 20px;
+}
+.users-name{
+    font-size: var(--title-3);
+    margin-bottom: 10px;
+}
+.users-description{
+    font-size: var(--text-3);
+    margin-bottom: 5px;
+}
+.company-name-users{
+    font-size: var(--text-3);
+    margin-bottom: 30px;
+}
+.bottons-users{
+    display: flex;
+    justify-content: center;
+}
+.dialog-delete{
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+}
+.div-content-modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.div-content-modal > h1{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 16px;
+}
+.div-close{
+    display: flex;
+    justify-content: end;
+}
+.div-close > button{
+    background-color: var(--grey900);
+    border: none;
+    font-size: var(--title-3);
+}
+.delete-modal{
+    background-color: var(--sucess100);
+    width: 80%;
+    height: 40px;
+    color: var(--grey900);
+}
+.dialog-edit{
+    width: 400px;
+    height: 270px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+}
+.close-modal-edit{
+    background-color: var(--grey900);
+    border: none;
+    font-size: var(--title-3);
+    cursor: pointer;
+}
+.div-close-edit{
+    display: flex;
+    justify-content: end;
+}
+.div-content-modal-edit{
+    padding: 10px;
+}
+.div-content-modal-edit > h1{
+    margin-bottom: 20px;
+}
+.select-type-work, .select-professional-level{
+    background-color: var(--grey900);
+    border: 2px solid var(--grey500);
+    padding-left: 10px;
+}
+.select-type-work, .select-professional-level, .button-modal-edit{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.button-modal-edit{
+    background-color: var(--brand100);
+    color: var(--grey900);
+    border: none;
+}
+/* modal create */
+.dialog-create{
+    width: 400px;
+    height: 320px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+}
+.close-modal-create{
+    background-color: var(--grey900);
+    border: none;
+    font-size: var(--title-3);
+    cursor: pointer;
+}
+.div-close-create{
+    display: flex;
+    justify-content: end;
+}
+.div-content-modal-create{
+    padding: 10px;
+}
+.div-content-modal-create > h1{
+    margin-bottom: 20px;
+}
+.select-create, .input-create{
+    background-color: var(--grey900);
+    border: 2px solid var(--grey500);
+    padding-left: 10px;
+}
+.select-create, .button-modal-create, .input-create{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.button-modal-create{
+    background-color: var(--brand100);
+    color: var(--grey900);
+    border: none;
+}
+/* modal edit departamento */
+.dialog-edit-department{
+    width: 400px;
+    height: 330px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+}
+.close-modal-edit-department{
+    background-color: var(--grey900);
+    border: none;
+    font-size: var(--title-3);
+    cursor: pointer;
+}
+.div-close-edit-department{
+    display: flex;
+    justify-content: end;
+}
+.div-content-modal-edit-department{
+    padding: 10px;
+}
+.div-content-modal-edit-department > h1{
+    margin-bottom: 20px;
+}
+.textarea-edit-department{
+    background-color: var(--grey900);
+    border: 2px solid var(--grey500);
+    padding-left: 10px;
+}
+
+.button-modal-edit-department{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    background-color: var(--brand100);
+    color: var(--grey900);
+    border: none;
+}
+.textarea-edit-department{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+/* modal delete departamento */
+.dialog-delete-department{
+    width: 440px;
+    height: 270px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+}
+.close-modal-delete-department{
+    background-color: var(--grey900);
+    border: none;
+    font-size: var(--title-3);
+    cursor: pointer;
+}
+.div-close-delete-department{
+    display: flex;
+    justify-content: end;
+}
+.div-content-modal-delete-department{
+    padding: 20px 60px;
+    display: flex;
+    flex-direction: column;
+}
+.div-content-modal-delete-department > h1{
+    margin-bottom: 20px;
+    font-size: var(--title-4);
+}
+.div-content-modal-delete-department > button{
+    width: 100%;
+    height: 40px;
+    background-color: var(--sucess100);
+    color: var(--grey900);
+    font-size: var(--text-33);
+    font-weight: 600;
+}
+
+/* modal visualizar departamento */
+.dialog-look-department{
+    width: 860px;
+    height: 550px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+}
+.close-modal-look-department{
+    background-color: var(--grey900);
+    border: none;
+    font-size: var(--title-3);
+    cursor: pointer;
+}
+.div-close-look-department{
+    display: flex;
+    justify-content: end;
+}
+.div-content-modal-look-department{
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+}
+.div-content-modal-look-department > h1{
+    margin-bottom: 30px;
+    font-size: var(--title-3);
+}
+.div-select-and-description{
+    display: flex;
+    justify-content: space-between;
+}
+.div-description-department > h3{
+    margin-bottom: 10px;
+}
+.select-look-department{
+    width: 340px;
+    height: 40px;
+    background-color: var(--grey900);
+    border: 2px solid var(--grey500);
+    padding-left: 10px;
+    margin-bottom: 10px;
+    color: rgb(97, 96, 96);
+}
+.form-department-look{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.button-look-department{
+    width: 140px;
+    height: 40px;
+    border: none;
+    background-color: var(--sucess100);
+    color: var(--grey900);
+    font-size: var(--text-4);
+    font-weight: 600;
+}
+.ul-look-department{
+    background-color: var(--grey500);
+    margin-top: 40px;
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 20px;
+    overflow-y: scroll;
+}
+.li-look-department{
+    background-color: var(--grey900);
+    margin: 20px;
+    padding: 20px;
+    border-bottom: 2px solid var(--brand100);
+}
+.li-look-department > h3{
+    padding-right: 100px;
+    margin-bottom: 15px;
+}
+.li-look-department > p{
+    margin-bottom: 10px; 
+}
+.div-button-fired{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.button-fired{
+    width: 100px;
+    height: 30px;
+    background-color: var(--grey900);
+    border: 2px solid var(--alert100);
+    color: var(--alert100);
+    font-weight: 600;
+}
+
+
+

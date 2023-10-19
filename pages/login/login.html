@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/pages/login/login.css">
+    <link rel="stylesheet" href="/styles/globalStyles.css">
+    
+    <title>Empresas - Login</title>
+</head>
+<body class="container">
+    <header class="header">
+        <div class="div-logo">
+            <div class="circle-logo"></div>
+            <h1 class="title-logo">Kenzie Empresas</h1>
+        </div>
+        <button class="sandwich-button">&#9776;</button>
+        <div class="div-login-and-register">
+            <button class="login-button-menu">Login</button>
+            <button class="register-button-menu">Cadastro</button>
+        </div>
+    </header>
+    <main class="main-container">
+        <figure class="div-back-img">
+            <img class="back-img" src="/assets/img/back-img.png" alt="">
+        </figure>
+        
+        <section class="login"> 
+
+            <form class="form-login" action="">
+                <div class="div-login">
+                    <h1 class="h1-login">Login</h1>
+                    <h3 class="h3-login">Preencha os campos para realizar login</h3>
+                </div>
+
+                
+                <input class="input-login" type="text" id="email" placeholder="Seu e-mail">
+
+                
+                <input class="input-login" type="password" id="password" placeholder="Sua senha" >
+
+                
+                <button class="button-login" type="submit" disabled="disabled">Login</button>
+              
+
+                <div class="div-advice">
+                    <p>ou</p>
+                </div>  
+                <button class="button-back-to-register">Cadastre-se</button>
+            </form>
+        </section>
+
+    </main>
+    <div class="response-message none">
+        <h3 class="response-content"></h3>
+    </div>
+    <script type="module" src="/scripts/login.js"></script>
+</body>
+</html>

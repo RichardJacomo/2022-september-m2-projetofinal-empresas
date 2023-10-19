@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/pages/adminPage/adminPage.css">
+    <link rel="stylesheet" href="/pages/adminPage/modalDelete.css">
+    <link rel="stylesheet" href="/styles/globalStyles.css">
+    <title>Admin Dashboard</title>
+</head>
+<body class="container">
+    <header class="header">
+        <div class="div-logo">
+            <div class="circle-logo"></div>
+            <h1 class="title-logo">Kenzie Empresas</h1>
+        </div>
+        <button class="sandwich-button">&#9776;</button>
+        <div class="div-login-and-register">
+            <button class="logout-button-menu">Logout</button>
+        </div>
+    </header>
+        <section class="section-select">
+            <h1 class="title-select">Departamentos</h1>
+            <select class="selector" name="select">
+                <option value="">Selecionar Empresa</option>
+           
+            </select>
+            <button class="button-create"><span>+</span>Criar</button>
+        </section>
+        <ul class="ul-departments">
+            
+        </ul>
+        <section>
+            <div class="div-title-users">
+            <h1 class="title-users">Usuários cadastrados</h1>
+            </div>
+            <ul class="ul-users">
+               
+            </ul>
+        </section>
+
+        <section class="modal-container">
+        <dialog class="dialog-delete">
+            <div class="div-close">
+                <button class="close-modal">X</button>
+            </div>
+            <div class="div-content-modal">
+            
+            </div>
+        </dialog>
+        </section>
+
+        <section class="modal-container-edit">
+            <dialog class="dialog-edit">
+                <div class="div-close-edit">
+                    <button class="close-modal-edit">X</button>
+                </div>
+                <form class="div-content-modal-edit">
+          
+                </form>
+            </dialog>
+            </section>
+            
+            <section class="modal-container-create">
+                <dialog class="dialog-create">
+                    <div class="div-close-create">
+                        <button class="close-modal-create">X</button>
+                    </div>
+                    <form class="div-content-modal-create">
+                         <h1>Criar Departamento</h1>
+                         <input class="input-create" type="text" id="departmentName" placeholder="Nome do departamento">
+                         <input class="input-create" type="text" id="description" placeholder="Descrição">
+
+                        <select id="createSelect" class="select-create" name="select">
+                            <option value="">Selecionar empresa</option>
+                            
+                        </select>
+                         <button type="submit" class="button-modal-create">Criar departamento</button> 
+                    </form>
+                </dialog>
+                </section>
+
+                <section class="modal-container-edit-department">
+                    <dialog class="dialog-edit-department">
+                        <div class="div-close-edit-department">
+                            <button class="close-modal-edit-department">X</button>
+                        </div>
+                        <form class="div-content-modal-edit-department">
+                             <h1>Editar Departamento</h1>
+                            <div class="div-textarea-edit">
+                                <textarea class="textarea-edit-department" type="text" id="description" placeholder="" name="" cols="20" rows="8"></textarea>
+                            </div>
+                             <button type="submit" class="button-modal-edit-department">Editar departamento</button> 
+                        </form>
+                    </dialog>
+                    </section>
+
+
+                    <section class="modal-container-delete-department">
+                        <dialog class="dialog-delete-department">
+                            <div class="div-close-delete-department">
+                                <button class="close-modal-delete-department">X</button>
+                            </div>
+                                <div class="div-content-modal-delete-department">
+                             
+                                </div>
+                        </dialog>
+                        </section>
+
+                        <section class="modal-container-look-department">
+                            <dialog class="dialog-look-department">
+                                <div class="div-close-look-department">
+                                    <button class="close-modal-look-department">X</button>
+                                </div>
+                                    <div class="div-content-modal-look-department">
+                                        <div class="div-select div-content-modal-look-department">
+                                 
+                                        </div>
+                                         <ul class="ul-look-department">
+                                       
+                                         </ul>
+                                    </div>
+                            </dialog>
+                            </section>
+   
+    <script type="module" src="/scripts/adminPage.js"></script>  
+</body>
+</html>

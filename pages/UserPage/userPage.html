@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/pages/UserPage/userPage.css">
+    <link rel="stylesheet" href="/pages/UserPage/modal.css">
+    <link rel="stylesheet" href="/styles/globalStyles.css">
+    <title>Página do usuário</title>
+</head>
+<body class="container">
+    <header class="header">
+        <div class="div-logo">
+            <div class="circle-logo"></div>
+            <h1 class="title-logo">Kenzie Empresas</h1>
+        </div>
+        <button class="sandwich-button">&#9776;</button>
+        <div class="div-login-and-register">
+            <button class="logout-button-menu">Logout</button>
+        </div>
+    </header>
+    <main class="main-profile">
+        <section class="user-information">
+           
+        </section>
+        <section class="companies">
+            
+            <ul class="colegues">
+           
+            </ul> 
+        </section>
+        <div class="modal-wrapper" id="modal-edit">
+            <div class="modal">
+                <div class="modal-header">
+                    <h3 class="modal-title">Editar Perfil</h3>
+                    <button class="modal-close" data-control-modal="modal-edit">X</button>
+                </div>
+                <div class="modal-body">
+                    <form class="form-edit" action="">
+
+                        <input class="input-edit" type="text" id="username" placeholder="Seu nome">
+        
+                        <input class="input-edit" type="text" id="email" placeholder="Seu e-mail">
+        
+                        <input class="input-edit" type="password" id="password" placeholder="Sua senha" >
+        
+                        <button class="button-edit-modal" type="submit">Editar Perfil</button>
+        
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script type="module" src="/scripts/user.js"></script>
+</body>
+</html>

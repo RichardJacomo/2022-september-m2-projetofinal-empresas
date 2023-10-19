@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./register.css">
+    <link rel="stylesheet" href="/styles/globalStyles.css">
+    <title>Empresas - Register</title>
+</head>
+<body class="container">
+    <header class="header">
+        <div class="div-logo">
+            <div class="circle-logo"></div>
+            <h1 class="title-logo">Kenzie Empresas</h1>
+        </div>
+        <button class="sandwich-button">&#9776;</button>
+        <div class="div-login-and-register">
+            <button class="login-button-menu">Login</button>
+            <button class="register-button-menu">Cadastro</button>
+        </div>
+    </header>
+    <main class="main-container">
+        <figure class="div-back-img">
+            <img class="back-img" src="/assets/img/back-img.png" alt="">
+        </figure>
+        
+        <section class="register"> 
+
+            <form class="form-register" action="">
+                <div class="div-register">
+                    <h1 class="h1-register">Cadastre-se</h1>
+                
+                </div>
+
+        
+                <input class="input-register" type="text" id="username" placeholder="Seu nome">
+
+   
+                <input class="input-register" type="text" id="email" placeholder="Seu e-mail">
+
+           
+                <input class="input-register" type="password" id="password" placeholder="Sua senha" >
+
+                <select class="select-register" name="select" id="select">
+                    <option value="">Nível profissional</option>
+                    <option value="estágio">estágio</option>
+                    <option value="júnior">júnior</option>
+                    <option value="pleno">pleno</option>
+                    <option value="sênior">sênior</option>
+                  </select>
+
+   
+                <button class="button-register" type="submit" disabled="disabled">Cadastre-se</button>
+               
+ 
+                <button class="button-return">Retornar</button>
+            </form>
+        </section>
+        </main>
+        <div class="response-message none">
+            <h3 class="response-content"></h3>
+        </div>
+       
+    <script type="module" src="/scripts/register.js"></script>
+</body>
+</html>
